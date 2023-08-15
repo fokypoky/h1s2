@@ -4,11 +4,9 @@ C:\Users\fokypoky\RiderProjects\H1S2\H1S2\bin\Debug\net7.0-windows\H1S2.runtimec
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\bin\Debug\net7.0-windows\H1S2.dll
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\bin\Debug\net7.0-windows\H1S2.pdb
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\H1S2.csproj.AssemblyReference.cache
-C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\MainWindow.g.cs
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\App.g.cs
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\H1S2_MarkupCompile.cache
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\H1S2_MarkupCompile.lref
-C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\MainWindow.baml
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\H1S2.g.resources
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\H1S2.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\H1S2.AssemblyInfoInputs.cache
@@ -19,3 +17,5 @@ C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\refint\H1S2.d
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\H1S2.pdb
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\H1S2.genruntimeconfig.cache
 C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\ref\H1S2.dll
+C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\Views\Windows\MainWindow.g.cs
+C:\Users\fokypoky\RiderProjects\H1S2\H1S2\obj\Debug\net7.0-windows\Views\Windows\MainWindow.baml
