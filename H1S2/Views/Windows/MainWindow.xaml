@@ -6,13 +6,87 @@
         xmlns:local="clr-namespace:H1S2"
         xmlns:vmodel="clr-namespace:H1S2.ViewModels.WindowsViewModels"
         mc:Ignorable="d"
-        Title="Вариант 13" Height="450" Width="800">
+        Title="Вариант 13" MinHeight="600" MinWidth="1200">
     
     <Window.DataContext>
         <vmodel:MainWindowViewModel/>
     </Window.DataContext>
     
+    <Window.Resources>
+        <Style x:Key="OutputTextBlockStyle">
+            <Setter Property="TextBlock.HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextBlock.VerticalAlignment" Value="Center"/>
+            <Setter Property="TextBlock.FontSize" Value="20"/>
+            <Setter Property="TextBlock.FontWeight" Value="Bold"/>
+            <Setter Property="TextBlock.Margin" Value="5,0,5,0"/>
+        </Style>
+        <Style x:Key="OutputButtonStyle">
+            <Setter Property="Button.MinWidth" Value="150"/>
+            <Setter Property="Button.Margin" Value="5"/>
+            <Setter Property="Button.FontSize" Value="20"/>
+            <Setter Property="Button.BorderThickness" Value="0"/>
+        </Style>
+        <Style x:Key="InputTextBoxStyle">
+            <Setter Property="TextBox.VerticalScrollBarVisibility" Value="Visible"/>
+            <Setter Property="TextBox.TextWrapping" Value="Wrap"/>
+            <Setter Property="TextBox.IsUndoEnabled" Value="True"/>
+            <Setter Property="TextBox.AcceptsReturn" Value="True"/>
+            <Setter Property="TextBox.FontSize" Value="18"/>
+            <Setter Property="TextBox.AcceptsTab" Value="True"/>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Grid.Row="0" Text="Язык"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="18"
+                       />
+            
+            <TextBlock Grid.Row="1" FontSize="17"/>
+            
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Grid.Row="0" Text="Ввод"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       FontWeight="Bold" FontSize="18"/>
+            
+            <TextBox Grid.Row="1" Style="{StaticResource InputTextBoxStyle}"/>
+            
+        </Grid>
+        
+        <Border BorderBrush="Black" BorderThickness="1"
+                Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+        
+        <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Расчитать" 
+                    Style="{StaticResource OutputButtonStyle}"/>
+                <TextBlock Text="Вывод:"
+                    Style="{StaticResource OutputTextBlockStyle}"/>
+                <TextBlock Style="{StaticResource OutputTextBlockStyle}"/>
+            </StackPanel>
+        </Grid>
         
     </Grid>
 </Window>
