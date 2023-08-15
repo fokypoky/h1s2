@@ -1,4 +1,6 @@
-﻿using System.Windows.Input;
+﻿using System.Linq;
+using System.Text;
+using System.Windows.Input;
 using H1S2.Infrastructure.Commands;
 using H1S2.ViewModels.Base;
 
@@ -38,7 +40,13 @@ public class MainWindowViewModel : ViewModel
 
     #region Methods
 
-    public void Calculate(object parameter){}
+    public void Calculate(object parameter)
+    {
+        var textCleaner = new StringBuilder(InputText);
+        textCleaner.Replace("\r", " ").Replace("\n", " ").Replace("\t", " ");
+        var terminals = textCleaner.ToString().Split(" ").ToList();
+        terminals.RemoveAll(c => c == "");
+    }
 
     #endregion
 }
