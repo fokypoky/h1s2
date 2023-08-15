@@ -71,8 +71,9 @@
                        HorizontalAlignment="Center" VerticalAlignment="Center"
                        FontWeight="Bold" FontSize="18"/>
             
-            <TextBox Grid.Row="1" Style="{StaticResource InputTextBoxStyle}"/>
-            
+            <TextBox Grid.Row="1" Style="{StaticResource InputTextBoxStyle}"
+                     Text="{Binding InputText,
+                     UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
         </Grid>
         
         <Border BorderBrush="Black" BorderThickness="1"
@@ -80,11 +81,13 @@
         
         <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
-                <Button Content="Расчитать" 
+                <Button Content="Расчитать"
+                    Command="{Binding CalculateCommand}"
                     Style="{StaticResource OutputButtonStyle}"/>
                 <TextBlock Text="Вывод:"
                     Style="{StaticResource OutputTextBlockStyle}"/>
-                <TextBlock Style="{StaticResource OutputTextBlockStyle}"/>
+                <TextBlock Text="{Binding OutputText}" 
+                    Style="{StaticResource OutputTextBlockStyle}"/>
             </StackPanel>
         </Grid>
         
